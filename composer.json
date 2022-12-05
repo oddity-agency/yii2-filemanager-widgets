@@ -16,7 +16,7 @@
   ],
   "require": {
     "yiisoft/yii2": "*",
-    "dmstr/yii2-filefly-module" : "^1.7.0-rc1",
+    "dmstr/yii2-filefly-module" : "oddity-agency-patches-php-81",
     "kartik-v/yii2-widget-select2": "^2.0.0",
     "rmrevin/yii2-fontawesome": "~2.9",
     "yii2assets/yii2-fullscreen-modal": "^1.0.2"
@@ -34,5 +34,11 @@
     "psr-4": {
       "hrzg\\filemanager\\": "src/"
     }
-  }
+  },
+  "repositories" : [
+		{
+			"type": "git",
+			"url": "https://github.com/oddity-agency/yii2-filefly-module.git"
+		}
+	],
 }
