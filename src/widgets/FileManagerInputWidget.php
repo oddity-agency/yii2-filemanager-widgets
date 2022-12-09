@@ -42,7 +42,7 @@ class FileManagerInputWidget extends InputWidget
         parent::init();
 
         if (empty($this->handlerUrl)) {
-            throw new Exception('Missing handlerUrl confiugration');
+            throw new Exception('Missing handlerUrl configuration');
         }
 
         if ($this->hasModel()) {
@@ -310,7 +310,7 @@ JS;
      *
      * @return string
      */
-    private function to($action, $path = '')
+    protected function to($action, $path = '')
     {
         return Url::to([$this->handlerUrl, 'action' => $action, 'path' => $path]);
     }
